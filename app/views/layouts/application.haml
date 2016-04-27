@@ -1,0 +1,22 @@
+!!!
+%html{"ng-app" => 'GoPlyr', "ng-controller" => 'MainCtrl', "ng-strict-di" => "", "ng-cloak" => ""}
+  %head
+    %title GoPlyr
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav", :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %base{:href => "/"}/
+  %body{}
+    %section.vbox
+      %ng-include{src: "'music/shared/header.html'"}
+      %section
+        %section.hbox.stretch
+          / .aside
+          %aside#nav.bg-black.dk.nav-xs.aside.hidden-print
+            %section.vbox{"ng-include": "'music/shared/left_aside.html'"}
+          / /.aside
+          %section#content
+            %ng-view

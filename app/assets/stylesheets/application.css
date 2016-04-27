@@ -10,6 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+ *= require "music/js/jPlayer/jplayer.flat.css"
+ *= require "music/css/bootstrap.css"
+ *= require "music/css/animate.css"
+ *= require "music/css/font-awesome.min.css"
+ *= require "music/css/simple-line-icons.css"
+ *= require "music/css/font.css"
+ *= require "music/css/app.css"
  */

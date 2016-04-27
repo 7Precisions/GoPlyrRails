@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -33,10 +33,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
+	gem 'byebug'
 	gem 'annotate'
-	gem 'haml-lint'
 	gem 'pry'
 end
 
@@ -48,6 +47,7 @@ group :development do
   gem 'spring'
 end
 
+gem 'devise'
 gem 'json_pure'
 gem 'hashie'
 gem 'awesome_print'
@@ -55,7 +55,6 @@ gem 'httpclient'
 gem 'coffee-script', '2.2.0'
 gem 'haml'
 gem 'rails-sass-images'
-gem "compass", ">= 1.0.0.alpha"
 gem 'sprockets'
 gem 'angularjs-rails'
 gem 'htmlcompressor'
@@ -63,8 +62,8 @@ gem "tilt-handlebars"
 gem 'activerecord-session_store'
 gem 'rest-client'
 gem 'savon', '~> 2.10.0'
-gem 'countries', :require => 'iso3166'
-gem 'omniauth-oxygen', :git => 'https://github.com/ljinke/omniauth-oxygen.git'
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'actionpack-page_caching'
 gem 'elastic-beanstalk'
 gem 'uuidtools'
@@ -75,3 +74,4 @@ gem 'exception_notification'
 gem 'restforce'
 gem 'angular-rails-templates'
 gem 'font-awesome-rails'
+gem 'lastfm-client', :git => 'http://github.com/pch/lastfm-client.git'
